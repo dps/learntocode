@@ -15,20 +15,40 @@ This code creates a list, which is a type of variable that can hold multiple val
 
 We write lists in python by putting elements inside square brackets `[ ]` and separating them with commas `,`
 
-Lists can contain python data of any type - we can write a list of `int`s, `str`s... we can even mix the type of elements inside a list (though this is not done often by programmers as it's rarely the clearest or easiest thing to understand)
+Lists can contain python data of any type - we can write a list of `int`s, `str`s... or anything at all.
 ```python
 >>> [1, 2, 3, 4]
 [1, 2, 3, 4]
 >>> ['Labrador Retriever', 'German Shepherd', 'Golden Retriever', 'Bulldog', 'Poodle']
 ['Labrador Retriever', 'German Shepherd', 'Golden Retriever', 'Bulldog', 'Poodle']
->>> [1, 'poodle', 2, 'pug']
-[1, 'poodle', 2, 'pug']
 >>> 
 ```
 
-The next line of code:
+Try running the rest of the code:
+```python
+>>> list_of_fruits = ["pear", "banana", "apple"]
+>>> print(list_of_fruits)
+['pear', 'banana', 'apple']
+>>> print("The first fruit is", list_of_fruits[0])
+The first fruit is pear
+>>> print("The last fruit is", list_of_fruits[-1])
+The last fruit is apple
+```
 
-print(list_of_fruits)
+Python lets us get items out of lists by asking for them by their position in the list inside square brackets. In Python, when we talk about lists, we often use the term "index" to refer to the position of an item in the list. Imagine a list of snacks, where the first snack is at position 0, the second snack is at position 1, and so on. This is called "0-indexing" because the first position is 0, not 1. So, if you wanted to get the third snack from the list, you would ask for the item at index 2 (not 3) because we start counting from 0, not 1.
+
+Try it out in the python interpreter:
+```python
+>>> alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+>>> alphabet[0]
+'a'
+>>> alphabet[25]
+'z'
+```
+> How do you get the letter `'e'` out of the `alphabet` list?
+
+Another way you can reference elements in a list is by counting _backwards_ from the end of the list. To do this, we use negative numbers. `list[-1]` means the last item in the list, `[-2]` the second-to-last and so on.
+> Get the letter `'y'` out of the `alphabet` list using a negative index.
 
 Uses the "print" function to print out the entire list.
 
